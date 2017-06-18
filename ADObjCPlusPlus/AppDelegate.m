@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+#import "ADTags.hpp"
+
+
 @interface AppDelegate ()
 
 @end
@@ -16,6 +19,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	// Insert code here to initialize your application
+//	ADTags *tags = [[ADTags alloc] init];
+	NSLog(@"attackType is %@", ADTags.attackSeconds);
 }
 
 

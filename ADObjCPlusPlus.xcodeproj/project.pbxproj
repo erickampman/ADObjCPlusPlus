@@ -12,6 +12,9 @@
 		E451C2161EF58C4E0017B252 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E451C2151EF58C4E0017B252 /* ViewController.m */; };
 		E451C2181EF58C4E0017B252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E451C2171EF58C4E0017B252 /* Assets.xcassets */; };
 		E451C21B1EF58C4E0017B252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E451C2191EF58C4E0017B252 /* Main.storyboard */; };
+		E451C2241EF58CF60017B252 /* ADTags.mm in Sources */ = {isa = PBXBuildFile; fileRef = E451C2231EF58CF60017B252 /* ADTags.mm */; };
+		E451C2271EF5EA880017B252 /* AD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E451C2251EF5EA880017B252 /* AD.cpp */; };
+		E451C22A1EF5F72E0017B252 /* SwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E451C2291EF5F72E0017B252 /* SwiftClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,12 @@
 		E451C2171EF58C4E0017B252 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E451C21A1EF58C4E0017B252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E451C21C1EF58C4E0017B252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E451C2221EF58CF60017B252 /* ADTags.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ADTags.hpp; sourceTree = "<group>"; };
+		E451C2231EF58CF60017B252 /* ADTags.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ADTags.mm; sourceTree = "<group>"; };
+		E451C2251EF5EA880017B252 /* AD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AD.cpp; sourceTree = "<group>"; };
+		E451C2261EF5EA880017B252 /* AD.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AD.hpp; sourceTree = "<group>"; };
+		E451C2281EF5F72E0017B252 /* ADObjCPlusPlus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ADObjCPlusPlus-Bridging-Header.h"; sourceTree = "<group>"; };
+		E451C2291EF5F72E0017B252 /* SwiftClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,14 +65,20 @@
 		E451C20D1EF58C4E0017B252 /* ADObjCPlusPlus */ = {
 			isa = PBXGroup;
 			children = (
+				E451C2221EF58CF60017B252 /* ADTags.hpp */,
+				E451C2231EF58CF60017B252 /* ADTags.mm */,
 				E451C20E1EF58C4E0017B252 /* AppDelegate.h */,
 				E451C20F1EF58C4E0017B252 /* AppDelegate.m */,
 				E451C2141EF58C4E0017B252 /* ViewController.h */,
 				E451C2151EF58C4E0017B252 /* ViewController.m */,
+				E451C2291EF5F72E0017B252 /* SwiftClass.swift */,
+				E451C2251EF5EA880017B252 /* AD.cpp */,
+				E451C2261EF5EA880017B252 /* AD.hpp */,
 				E451C2171EF58C4E0017B252 /* Assets.xcassets */,
 				E451C2191EF58C4E0017B252 /* Main.storyboard */,
 				E451C21C1EF58C4E0017B252 /* Info.plist */,
 				E451C2111EF58C4E0017B252 /* Supporting Files */,
+				E451C2281EF5F72E0017B252 /* ADObjCPlusPlus-Bridging-Header.h */,
 			);
 			path = ADObjCPlusPlus;
 			sourceTree = "<group>";
@@ -108,6 +123,7 @@
 					E451C20A1EF58C4E0017B252 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = R28W7FR6SE;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -147,6 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E451C2271EF5EA880017B252 /* AD.cpp in Sources */,
+				E451C2241EF58CF60017B252 /* ADTags.mm in Sources */,
+				E451C22A1EF5F72E0017B252 /* SwiftClass.swift in Sources */,
 				E451C2161EF58C4E0017B252 /* ViewController.m in Sources */,
 				E451C2131EF58C4E0017B252 /* main.m in Sources */,
 				E451C2101EF58C4E0017B252 /* AppDelegate.m in Sources */,
@@ -260,12 +279,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = R28W7FR6SE;
 				INFOPLIST_FILE = ADObjCPlusPlus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gneuron.ADObjCPlusPlus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ADObjCPlusPlus/ADObjCPlusPlus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -273,12 +296,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = R28W7FR6SE;
 				INFOPLIST_FILE = ADObjCPlusPlus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gneuron.ADObjCPlusPlus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ADObjCPlusPlus/ADObjCPlusPlus-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
