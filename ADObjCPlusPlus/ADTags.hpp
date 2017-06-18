@@ -6,9 +6,6 @@
 //  Copyright © 2017 Eric Kampman. All rights reserved.
 //
 
-#include <stdio.h>
-#include <math.h>
-
 #define ATTACK_TYPE_STR			"attackType"
 #define ATTACK_SECONDS_STR		"attackSeconds"
 #define SUSTAIN_STR				"sustain"
